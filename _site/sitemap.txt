@@ -9,5 +9,8 @@ http://hongmizi.github.com/team-members.html
 http://hongmizi.github.com/index.html
 http://hongmizi.github.com/archive.html
 
-http://hongmizi.github.com/lessons/2013/03/25/hello
+http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/25/daily
+http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/23/daily
+http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/22/daily
+http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/21/daily
 http://hongmizi.github.com/lessons/2011/12/29/jekyll-introduction

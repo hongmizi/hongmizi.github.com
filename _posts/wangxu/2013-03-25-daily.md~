@@ -1,0 +1,10 @@
+---
+layout: post
+category : Wangxyu's Daily
+tagline: "Supporting tagline"
+tags : [Wangxyu's Daily]
+---
+{% include JB/setup %}
+{% highlight ruby %}
+
+{% endhighlight %}

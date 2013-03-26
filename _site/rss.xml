@@ -5,17 +5,272 @@
         <description>hongmizi - hongmizi</description>
         <link>http://hongmizi.github.com</link>
         <link>http://hongmizi.github.com</link>
-        <lastBuildDate>2013-03-25T21:55:12+08:00</lastBuildDate>
-        <pubDate>2013-03-25T21:55:12+08:00</pubDate>
+        <lastBuildDate>2013-03-26T11:29:06+08:00</lastBuildDate>
+        <pubDate>2013-03-26T11:29:06+08:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
-                <title>Hello</title>
-                <description>&lt;p&gt;hello !&lt;/p&gt;</description>
-                <link>http://hongmizi.github.com/lessons/2013/03/25/hello</link>
-                <guid>http://hongmizi.github.com/lessons/2013/03/25/hello</guid>
+                <title>Daily</title>
+                <description>&lt;p&gt;修改hongmizi.github.com&lt;/p&gt;&lt;p&gt;agile 读至81页&lt;/p&gt;&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='ruby'&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+                <link>http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/25/daily</link>
+                <guid>http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/25/daily</guid>
                 <pubDate>2013-03-25T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Daily</title>
+                <description>&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='ruby'&gt;&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;invoke_func&lt;/span&gt; &lt;span class='o'&gt;&amp;amp;&lt;/span&gt;&lt;span class='n'&gt;func&lt;/span&gt;
+  &lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;times&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='o'&gt;&amp;amp;&lt;/span&gt;&lt;span class='n'&gt;func&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+&lt;span class='n'&gt;invoke_func&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;hello&amp;quot;&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt;
+
+&lt;span class='n'&gt;mans&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='sx'&gt;%w[awsam wiserwx dingdong]&lt;/span&gt;
+&lt;span class='cm'&gt;=begin&lt;/span&gt;
+&lt;span class='cm'&gt;mans.each do |man|&lt;/span&gt;
+&lt;span class='cm'&gt;puts man&lt;/span&gt;
+&lt;span class='cm'&gt;end&lt;/span&gt;
+&lt;span class='cm'&gt;=end&lt;/span&gt;
+&lt;span class='n'&gt;mans&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;each&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;&lt;span class='o'&gt;|&lt;/span&gt;&lt;span class='n'&gt;man&lt;/span&gt;&lt;span class='o'&gt;|&lt;/span&gt; &lt;span class='nb'&gt;print&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;hi&amp;quot;&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt;
+&lt;span class='nb'&gt;print&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;hello wrold &amp;quot;&lt;/span&gt;
+&lt;span class='cm'&gt;=begin&lt;/span&gt;
+&lt;span class='cm'&gt;def fun hash&lt;/span&gt;
+&lt;span class='cm'&gt;  puts hash&lt;/span&gt;
+&lt;span class='cm'&gt;end&lt;/span&gt;
+&lt;span class='cm'&gt;fun :action =&amp;gt; &amp;#39;show&amp;#39;, :ages =&amp;gt; 16&lt;/span&gt;
+&lt;span class='cm'&gt;#regular expressions&lt;/span&gt;
+&lt;span class='cm'&gt;line = &amp;quot;hello world&amp;quot;&lt;/span&gt;
+&lt;span class='cm'&gt;if line =~ /hello/&lt;/span&gt;
+&lt;span class='cm'&gt;  puts &amp;quot;have&amp;quot;&lt;/span&gt;
+&lt;span class='cm'&gt;else&lt;/span&gt;
+&lt;span class='cm'&gt;  puts &amp;quot;no&amp;quot;&lt;/span&gt;
+&lt;span class='cm'&gt;end&lt;/span&gt;
+
+&lt;span class='cm'&gt;puts &amp;quot;have hello &amp;quot; if line =~ /hello/&lt;/span&gt;
+&lt;span class='cm'&gt;puts &amp;quot;have world &amp;quot; if line =~ /world/&lt;/span&gt;
+&lt;span class='cm'&gt;ages = []&lt;/span&gt;
+&lt;span class='cm'&gt;ages &amp;lt;&amp;lt; 12&lt;/span&gt;
+&lt;span class='cm'&gt;ages &amp;lt;&amp;lt; 14&lt;/span&gt;
+&lt;span class='cm'&gt;ages &amp;lt;&amp;lt; 15&lt;/span&gt;
+&lt;span class='cm'&gt;ages &amp;lt;&amp;lt; 16&lt;/span&gt;
+&lt;span class='cm'&gt;print ages&lt;/span&gt;
+&lt;span class='cm'&gt;ages.each do |age|&lt;/span&gt;
+&lt;span class='cm'&gt;  puts age&lt;/span&gt;
+&lt;span class='cm'&gt;end&lt;/span&gt;
+&lt;span class='cm'&gt;names = %w[awsam world]&lt;/span&gt;
+&lt;span class='cm'&gt;for name in names&lt;/span&gt;
+&lt;span class='cm'&gt;  puts name&lt;/span&gt;
+&lt;span class='cm'&gt;end&lt;/span&gt;
+
+&lt;span class='cm'&gt;womans = {&lt;/span&gt;
+&lt;span class='cm'&gt;  :a =&amp;gt; &amp;#39;A&amp;#39;, &lt;/span&gt;
+&lt;span class='cm'&gt;  :b =&amp;gt; &amp;#39;B&amp;#39;, &lt;/span&gt;
+&lt;span class='cm'&gt;  :c =&amp;gt; &amp;#39;C&amp;#39;,&lt;/span&gt;
+&lt;span class='cm'&gt;  :d =&amp;gt; &amp;#39;D&amp;#39;&lt;/span&gt;
+&lt;span class='cm'&gt;}&lt;/span&gt;
+&lt;span class='cm'&gt;puts womans[:a]&lt;/span&gt;
+&lt;span class='cm'&gt;puts womans[:b] &lt;/span&gt;
+
+&lt;span class='cm'&gt;womans.each do |k, v|&lt;/span&gt;
+&lt;span class='cm'&gt;  print k,v &lt;/span&gt;
+&lt;span class='cm'&gt;  print &amp;quot;\n&amp;quot;&lt;/span&gt;
+&lt;span class='cm'&gt;end&lt;/span&gt;
+&lt;span class='cm'&gt;=end&lt;/span&gt;
+&lt;span class='c1'&gt;# 注意规范&lt;/span&gt;
+&lt;span class='cm'&gt;=begin&lt;/span&gt;
+&lt;span class='cm'&gt;mans = [&amp;quot;awsam&amp;quot;,&amp;quot;wiserwx&amp;quot;,&amp;quot;chile&amp;quot;]&lt;/span&gt;
+&lt;span class='cm'&gt;mans.each do |man|&lt;/span&gt;
+&lt;span class='cm'&gt;  puts man&lt;/span&gt;
+&lt;span class='cm'&gt;end&lt;/span&gt;
+
+&lt;span class='cm'&gt;womans ={:awsam =&amp;gt; 19, :wiserwx =&amp;gt; 20, :chile =&amp;gt; 21}&lt;/span&gt;
+&lt;span class='cm'&gt;womans.each do |key, value|&lt;/span&gt;
+&lt;span class='cm'&gt;  puts key&lt;/span&gt;
+&lt;span class='cm'&gt;  puts value&lt;/span&gt;
+&lt;span class='cm'&gt;  puts &amp;quot;===&amp;quot;&lt;/span&gt;
+&lt;span class='cm'&gt;end&lt;/span&gt;
+
+&lt;span class='cm'&gt;def say_hello name, age&lt;/span&gt;
+&lt;span class='cm'&gt;  &amp;quot;hello, #{name.capitalize}, #{age}&amp;quot;&lt;/span&gt;
+&lt;span class='cm'&gt;end&lt;/span&gt;
+&lt;span class='cm'&gt;puts say_hello(&amp;quot;awsam&amp;quot;, 10)&lt;/span&gt;
+&lt;span class='cm'&gt;puts say_hello(&amp;quot;wiserwx&amp;quot;, 20)&lt;/span&gt;
+
+&lt;span class='cm'&gt;class Human&lt;/span&gt;
+&lt;span class='cm'&gt;  def intilize name&lt;/span&gt;
+&lt;span class='cm'&gt;  @name=name&lt;/span&gt;
+&lt;span class='cm'&gt;  end&lt;/span&gt;
+&lt;span class='cm'&gt;  &lt;/span&gt;
+&lt;span class='cm'&gt;  def show &lt;/span&gt;
+&lt;span class='cm'&gt;  puts &amp;quot;name:#{@name}&amp;quot;&lt;/span&gt;
+&lt;span class='cm'&gt;  end&lt;/span&gt;
+&lt;span class='cm'&gt;end&lt;/span&gt;
+
+&lt;span class='cm'&gt;wiser=Human.new &amp;quot;wiser&amp;quot;&lt;/span&gt;
+&lt;span class='cm'&gt;wiser.show&lt;/span&gt;
+&lt;span class='cm'&gt;=end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+                <link>http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/23/daily</link>
+                <guid>http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/23/daily</guid>
+                <pubDate>2013-03-23T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Daily</title>
+                <description>&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='ruby'&gt;&lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;
+&lt;span class='nb'&gt;name&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;awsam&amp;quot;&lt;/span&gt;
+&lt;span class='nb'&gt;puts&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;hello &lt;/span&gt;&lt;span class='si'&gt;#{&lt;/span&gt;&lt;span class='nb'&gt;name&lt;/span&gt;&lt;span class='si'&gt;}&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+
+&lt;span class='k'&gt;class&lt;/span&gt; &lt;span class='nc'&gt;Apple&lt;/span&gt;
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;fun1&lt;/span&gt;
+    &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='vi'&gt;@a&lt;/span&gt;
+    &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;@@&amp;quot;&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+  
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;fun2&lt;/span&gt;
+    &lt;span class='vi'&gt;@a&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;apple&amp;quot;&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt; 
+
+&lt;span class='n'&gt;apple&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='no'&gt;Apple&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;new&lt;/span&gt;
+&lt;span class='c1'&gt;#apple.fun2&lt;/span&gt;
+&lt;span class='n'&gt;apple&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;fun1&lt;/span&gt;
+&lt;span class='n'&gt;apple&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;fun2&lt;/span&gt;
+&lt;span class='n'&gt;apple2&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='kp'&gt;nil&lt;/span&gt;
+&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;apple2&lt;/span&gt;
+  &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;ok&amp;quot;&lt;/span&gt;
+&lt;span class='k'&gt;else&lt;/span&gt;
+  &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;false&amp;quot;&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+
+
+&lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='ss'&gt;:awsam&lt;/span&gt;
+
+&lt;span class='o'&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class='no'&gt;EEE&lt;/span&gt;
+&lt;span class='sh'&gt;class Man&lt;/span&gt;
+&lt;span class='sh'&gt;  attr_reader :name,:age&lt;/span&gt;
+&lt;span class='sh'&gt;  &lt;/span&gt;
+
+&lt;span class='sh'&gt;  def initialize&lt;/span&gt;
+&lt;span class='sh'&gt;    age=0&lt;/span&gt;
+&lt;span class='sh'&gt;    @name=&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class='sh'&gt;  end&lt;/span&gt;
+
+&lt;span class='sh'&gt;  def set_name(n)&lt;/span&gt;
+&lt;span class='sh'&gt;    @name=n&lt;/span&gt;
+&lt;span class='sh'&gt;  end&lt;/span&gt;
+
+&lt;span class='sh'&gt;  def set_age(n)&lt;/span&gt;
+&lt;span class='sh'&gt;    @age=n&lt;/span&gt;
+&lt;span class='sh'&gt;  end&lt;/span&gt;
+&lt;span class='sh'&gt;  &lt;/span&gt;
+&lt;span class='sh'&gt;  def show&lt;/span&gt;
+&lt;span class='sh'&gt;    print &amp;quot;%s %s&amp;quot;%[@name,@age]&lt;/span&gt;
+&lt;span class='sh'&gt;  end&lt;/span&gt;
+&lt;span class='sh'&gt;end&lt;/span&gt;
+
+&lt;span class='sh'&gt;wiser=Man.new&lt;/span&gt;
+&lt;span class='sh'&gt;wiser.show&lt;/span&gt;
+&lt;span class='sh'&gt;wiser.set_name &amp;quot;wiser&amp;quot;&lt;/span&gt;
+&lt;span class='sh'&gt;wiser.set_age 100&lt;/span&gt;
+&lt;span class='sh'&gt;wiser.show&lt;/span&gt;
+&lt;span class='sh'&gt;puts &amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class='sh'&gt; 20.times {puts &amp;quot;2.times&amp;quot;}&lt;/span&gt;
+&lt;span class='no'&gt;EEE&lt;/span&gt;
+&lt;span class='o'&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class='no'&gt;DDD&lt;/span&gt;
+&lt;span class='sh'&gt;def show()&lt;/span&gt;
+&lt;span class='sh'&gt;  puts &amp;quot;show&amp;quot;&lt;/span&gt;
+&lt;span class='sh'&gt;end&lt;/span&gt;
+
+&lt;span class='sh'&gt;def start()&lt;/span&gt;
+&lt;span class='sh'&gt;  puts &amp;quot;start&amp;quot;&lt;/span&gt;
+&lt;span class='sh'&gt;  return :show&lt;/span&gt;
+&lt;span class='sh'&gt;end&lt;/span&gt;
+
+&lt;span class='sh'&gt;a=method(:show)&lt;/span&gt;
+&lt;span class='sh'&gt;a.call&lt;/span&gt;
+&lt;span class='sh'&gt;b=start&lt;/span&gt;
+&lt;span class='sh'&gt;c=method(b)&lt;/span&gt;
+&lt;span class='sh'&gt;c.call&lt;/span&gt;
+&lt;span class='no'&gt;DDD&lt;/span&gt;
+
+
+
+
+
+
+
+
+&lt;span class='o'&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class='no'&gt;BBB&lt;/span&gt;
+&lt;span class='sh'&gt;cities = {&amp;#39;BJ&amp;#39; =&amp;gt; &amp;quot;beijing&amp;quot;,&amp;#39;NJ&amp;#39;=&amp;gt; &amp;quot;nanjing&amp;quot;}&lt;/span&gt;
+&lt;span class='sh'&gt;def find_city(map,state)&lt;/span&gt;
+&lt;span class='sh'&gt;  if map.include?(state)&lt;/span&gt;
+&lt;span class='sh'&gt;    return map[state]&lt;/span&gt;
+&lt;span class='sh'&gt;  else&lt;/span&gt;
+&lt;span class='sh'&gt;    return &amp;quot;not fond&amp;quot;&lt;/span&gt;
+&lt;span class='sh'&gt;  end&lt;/span&gt;
+&lt;span class='sh'&gt;end&lt;/span&gt;
+
+&lt;span class='sh'&gt;cities[&amp;quot;find&amp;quot;] = method(:find_city)&lt;/span&gt;
+
+&lt;span class='sh'&gt;while true&lt;/span&gt;
+&lt;span class='sh'&gt;  print &amp;quot;state?&amp;quot;&lt;/span&gt;
+&lt;span class='sh'&gt;  state=gets.chomp&lt;/span&gt;
+&lt;span class='sh'&gt;  break if state.empty?&lt;/span&gt;
+&lt;span class='sh'&gt;  puts cities[&amp;quot;find&amp;quot;].call(cities,state)&lt;/span&gt;
+&lt;span class='sh'&gt;end&lt;/span&gt;
+
+
+&lt;span class='no'&gt;BBB&lt;/span&gt;
+
+
+
+&lt;span class='o'&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class='no'&gt;AAA&lt;/span&gt;
+&lt;span class='sh'&gt;def show()&lt;/span&gt;
+&lt;span class='sh'&gt;  puts &amp;quot;hello&amp;quot;&lt;/span&gt;
+&lt;span class='sh'&gt;end&lt;/span&gt;
+
+&lt;span class='sh'&gt;def start()&lt;/span&gt;
+&lt;span class='sh'&gt;  puts &amp;quot;world&amp;quot;&lt;/span&gt;
+&lt;span class='sh'&gt;  show()&lt;/span&gt;
+&lt;span class='sh'&gt;end&lt;/span&gt;
+
+&lt;span class='sh'&gt;#  start&lt;/span&gt;
+&lt;span class='sh'&gt;stuff = &amp;quot;hello wrld a thing si&amp;quot;.split(&amp;#39; &amp;#39;)&lt;/span&gt;
+&lt;span class='sh'&gt;print stuff&lt;/span&gt;
+&lt;span class='sh'&gt;print &amp;quot;\n&amp;quot;&lt;/span&gt;
+&lt;span class='sh'&gt;puts stuff[1]&lt;/span&gt;
+&lt;span class='sh'&gt;puts stuff.pop()&lt;/span&gt;
+&lt;span class='sh'&gt;puts stuff.join(&amp;#39; &amp;#39;)&lt;/span&gt;
+&lt;span class='sh'&gt;puts stuff.values_at(1,2).join(&amp;#39;#&amp;#39;)&lt;/span&gt;
+&lt;span class='no'&gt;AAA&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+                <link>http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/22/daily</link>
+                <guid>http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/22/daily</guid>
+                <pubDate>2013-03-22T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Daily</title>
+                <description>&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='ruby'&gt;&lt;span class='k'&gt;module&lt;/span&gt; &lt;span class='nn'&gt;Ex25&lt;/span&gt;
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nc'&gt;self&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='nf'&gt;break_words&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;stuff&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+    &lt;span class='n'&gt;words&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='n'&gt;stuff&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;split&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s1'&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+    &lt;span class='n'&gt;words&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nc'&gt;self&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='nf'&gt;sort_words&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;words&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+    &lt;span class='n'&gt;words&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;sort&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+ 
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nc'&gt;self&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='nf'&gt;print&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+    &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+                <link>http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/21/daily</link>
+                <guid>http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/21/daily</guid>
+                <pubDate>2013-03-21T00:00:00+08:00</pubDate>
         </item>
 
         <item>

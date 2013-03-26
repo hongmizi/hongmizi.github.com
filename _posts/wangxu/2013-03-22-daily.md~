@@ -1,0 +1,136 @@
+---
+layout: post
+category : Wangxyu's Daily
+tagline: "Supporting tagline"
+tags : [Wangxyu's Daily]
+---
+{% include JB/setup %}
+{% highlight ruby %}
+puts "hello"
+name = "awsam"
+puts("hello #{name}")
+
+class Apple
+  def fun1
+    puts @a
+    puts "@@"
+  end
+  
+  def fun2
+    @a = "apple"
+  end
+end 
+
+apple=Apple.new
+#apple.fun2
+apple.fun1
+apple.fun2
+apple2=nil
+if apple2
+  puts "ok"
+else
+  puts "false"
+end
+
+
+puts :awsam
+
+<<EEE
+class Man
+  attr_reader :name,:age
+  
+
+  def initialize
+    age=0
+    @name=""
+  end
+
+  def set_name(n)
+    @name=n
+  end
+
+  def set_age(n)
+    @age=n
+  end
+  
+  def show
+    print "%s %s"%[@name,@age]
+  end
+end
+
+wiser=Man.new
+wiser.show
+wiser.set_name "wiser"
+wiser.set_age 100
+wiser.show
+puts ""
+ 20.times {puts "2.times"}
+EEE
+<<DDD
+def show()
+  puts "show"
+end
+
+def start()
+  puts "start"
+  return :show
+end
+
+a=method(:show)
+a.call
+b=start
+c=method(b)
+c.call
+DDD
+
+
+
+
+
+
+
+
+<<BBB
+cities = {'BJ' => "beijing",'NJ'=> "nanjing"}
+def find_city(map,state)
+  if map.include?(state)
+    return map[state]
+  else
+    return "not fond"
+  end
+end
+
+cities["find"] = method(:find_city)
+
+while true
+  print "state?"
+  state=gets.chomp
+  break if state.empty?
+  puts cities["find"].call(cities,state)
+end
+
+
+BBB
+
+
+
+<<AAA
+def show()
+  puts "hello"
+end
+
+def start()
+  puts "world"
+  show()
+end
+
+#  start
+stuff = "hello wrld a thing si".split(' ')
+print stuff
+print "\n"
+puts stuff[1]
+puts stuff.pop()
+puts stuff.join(' ')
+puts stuff.values_at(1,2).join('#')
+AAA
+{% endhighlight %}

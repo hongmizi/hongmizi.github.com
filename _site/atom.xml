@@ -4,7 +4,7 @@
  <title>hongmizi</title>
  <link href="http://hongmizi.github.com/" rel="self"/>
  <link href="http://hongmizi.github.com"/>
- <updated>2013-03-26T11:29:06+08:00</updated>
+ <updated>2013-03-27T09:07:08+08:00</updated>
  <id>http://hongmizi.github.com</id>
  <author>
    <name>hongmizi</name>
@@ -14,10 +14,158 @@
  
  <entry>
    <title>Daily</title>
+   <link href="http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/26/daily"/>
+   <updated>2013-03-26T00:00:00+08:00</updated>
+   <id>http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/26/daily</id>
+   <content type="html">&lt;ul&gt;
+&lt;li&gt;agile读至102&lt;/li&gt;
+
+&lt;li&gt;学习ruby 语法 - 阅读 编程修养&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='ruby'&gt;&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;func&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;f&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='p'&gt;{})&lt;/span&gt;
+ &lt;span class='c1'&gt;# 1.times f[:show]&lt;/span&gt;
+&lt;span class='n'&gt;f&lt;/span&gt;&lt;span class='o'&gt;[&lt;/span&gt;&lt;span class='ss'&gt;:show&lt;/span&gt;&lt;span class='o'&gt;].&lt;/span&gt;&lt;span class='n'&gt;call&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+
+&lt;span class='n'&gt;func&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='ss'&gt;:show&lt;/span&gt; &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='nb'&gt;lambda&lt;/span&gt;&lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;hello&amp;quot;&lt;/span&gt; &lt;span class='p'&gt;})&lt;/span&gt;
+&lt;span class='c1'&gt;#assert true&lt;/span&gt;
+
+&lt;span class='p'&gt;{}&lt;/span&gt;
+&lt;span class='p'&gt;{&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt; &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='mi'&gt;2&lt;/span&gt;&lt;span class='p'&gt;}&lt;/span&gt;
+&lt;span class='p'&gt;{&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt; &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='mi'&gt;2&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='mi'&gt;3&lt;/span&gt; &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='mi'&gt;4&lt;/span&gt;&lt;span class='p'&gt;}&lt;/span&gt;
+
+
+
+&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;func&lt;/span&gt; &lt;span class='nb'&gt;name&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='o'&gt;&amp;amp;&lt;/span&gt;&lt;span class='n'&gt;block&lt;/span&gt;
+&lt;span class='c1'&gt;#  :name=block&lt;/span&gt;
+  &lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='nb'&gt;block_given?&lt;/span&gt;
+    &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;block given&amp;quot;&lt;/span&gt;
+    &lt;span class='n'&gt;block&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;call&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+&lt;span class='n'&gt;func&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;hello&amp;quot;&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt;
+
+&lt;span class='cm'&gt;=begin&lt;/span&gt;
+&lt;span class='cm'&gt;func &amp;quot;name&amp;quot; do&lt;/span&gt;
+&lt;span class='cm'&gt;  puts &amp;quot;hello&amp;quot; &lt;/span&gt;
+&lt;span class='cm'&gt;end&lt;/span&gt;
+&lt;span class='cm'&gt;=end&lt;/span&gt;
+
+&lt;span class='n'&gt;data&lt;/span&gt;&lt;span class='o'&gt;=[&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;&lt;span class='mi'&gt;2&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;&lt;span class='mi'&gt;3&lt;/span&gt;&lt;span class='o'&gt;]&lt;/span&gt;
+&lt;span class='c1'&gt;#puts data.each { |k| k+1 }&lt;/span&gt;
+&lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='n'&gt;data&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;map&lt;/span&gt; &lt;span class='k'&gt;do&lt;/span&gt; &lt;span class='o'&gt;|&lt;/span&gt;&lt;span class='n'&gt;k&lt;/span&gt;&lt;span class='o'&gt;|&lt;/span&gt;
+&lt;span class='n'&gt;k&lt;/span&gt;&lt;span class='o'&gt;+&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+
+&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;test&lt;/span&gt;
+&lt;span class='k'&gt;yield&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='mi'&gt;2&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+&lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;begin&amp;quot;&lt;/span&gt;
+&lt;span class='nb'&gt;test&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;&lt;span class='o'&gt;|&lt;/span&gt;&lt;span class='n'&gt;i&lt;/span&gt;&lt;span class='o'&gt;|&lt;/span&gt; &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='n'&gt;i&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt;
+
+
+
+
+
+
+
+
+&lt;span class='k'&gt;module&lt;/span&gt; &lt;span class='nn'&gt;ActiveSupport&lt;/span&gt;
+  &lt;span class='k'&gt;class&lt;/span&gt; &lt;span class='nc'&gt;TestCase&lt;/span&gt;
+    &lt;span class='vc'&gt;@@test_cases&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='p'&gt;{}&lt;/span&gt;
+
+    &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nc'&gt;self&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='nf'&gt;test&lt;/span&gt; &lt;span class='n'&gt;test_case_name&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='o'&gt;&amp;amp;&lt;/span&gt;&lt;span class='n'&gt;block&lt;/span&gt;
+      &lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='nb'&gt;block_given?&lt;/span&gt;
+        &lt;span class='vc'&gt;@@test_cases&lt;/span&gt;&lt;span class='o'&gt;[&lt;/span&gt;&lt;span class='n'&gt;test_case_name&lt;/span&gt;&lt;span class='o'&gt;]&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;block&lt;/span&gt;
+      &lt;span class='k'&gt;end&lt;/span&gt;
+    &lt;span class='k'&gt;end&lt;/span&gt;
+
+    &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nc'&gt;self&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='nf'&gt;run&lt;/span&gt;
+      &lt;span class='vc'&gt;@@test_cases&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;each&lt;/span&gt; &lt;span class='k'&gt;do&lt;/span&gt; &lt;span class='o'&gt;|&lt;/span&gt;&lt;span class='n'&gt;key&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;value&lt;/span&gt;&lt;span class='o'&gt;|&lt;/span&gt;
+        &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;I am running test &lt;/span&gt;&lt;span class='si'&gt;#{&lt;/span&gt;&lt;span class='n'&gt;key&lt;/span&gt;&lt;span class='si'&gt;}&lt;/span&gt;&lt;span class='s2'&gt;....&amp;quot;&lt;/span&gt;
+        &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;The result is: &lt;/span&gt;&lt;span class='si'&gt;#{&lt;/span&gt;&lt;span class='n'&gt;value&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;call&lt;/span&gt;&lt;span class='si'&gt;}&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;
+      &lt;span class='k'&gt;end&lt;/span&gt;
+    &lt;span class='k'&gt;end&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+
+&lt;span class='k'&gt;class&lt;/span&gt; &lt;span class='nc'&gt;DemoTest&lt;/span&gt; &lt;span class='o'&gt;&amp;lt;&lt;/span&gt; &lt;span class='ss'&gt;ActiveSupport&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;&lt;span class='ss'&gt;:TestCase&lt;/span&gt;
+  &lt;span class='nb'&gt;test&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;1st test&amp;quot;&lt;/span&gt; &lt;span class='k'&gt;do&lt;/span&gt;
+    &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;the 1st test passes&amp;quot;&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+
+
+  &lt;span class='nb'&gt;test&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;2nd test&amp;quot;&lt;/span&gt; &lt;span class='k'&gt;do&lt;/span&gt;
+    &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;the 2nd test fails&amp;quot;&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+
+
+&lt;span class='no'&gt;DemoTest&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;run&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Daily</title>
    <link href="http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/25/daily"/>
    <updated>2013-03-25T00:00:00+08:00</updated>
    <id>http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/25/daily</id>
-   <content type="html">&lt;p&gt;修改hongmizi.github.com&lt;/p&gt;&lt;p&gt;agile 读至81页&lt;/p&gt;&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='ruby'&gt;
+   <content type="html">&lt;p&gt;修改hongmizi.github.com&lt;/p&gt;&lt;p&gt;agile 读至81页&lt;/p&gt;&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='ruby'&gt;&lt;span class='n'&gt;mans&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='sx'&gt;%w[wiser wiserwx wang]&lt;/span&gt;
+&lt;span class='n'&gt;mans&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;each&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='o'&gt;|&lt;/span&gt;&lt;span class='n'&gt;man&lt;/span&gt;&lt;span class='o'&gt;|&lt;/span&gt; &lt;span class='nb'&gt;print&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;hello &lt;/span&gt;&lt;span class='si'&gt;#{&lt;/span&gt;&lt;span class='n'&gt;man&lt;/span&gt;&lt;span class='si'&gt;}&lt;/span&gt;&lt;span class='se'&gt;\n&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;}&lt;/span&gt;
+&lt;span class='n'&gt;mans&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;each&lt;/span&gt; &lt;span class='k'&gt;do&lt;/span&gt; &lt;span class='o'&gt;|&lt;/span&gt;&lt;span class='n'&gt;man&lt;/span&gt;&lt;span class='o'&gt;|&lt;/span&gt;
+  &lt;span class='nb'&gt;print&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;do hello &lt;/span&gt;&lt;span class='si'&gt;#{&lt;/span&gt;&lt;span class='n'&gt;man&lt;/span&gt;&lt;span class='si'&gt;}&lt;/span&gt;&lt;span class='s2'&gt; &lt;/span&gt;&lt;span class='se'&gt;\n&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+
+&lt;span class='k'&gt;begin&lt;/span&gt;
+ &lt;span class='k'&gt;raise&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;error&amp;quot;&lt;/span&gt;
+&lt;span class='k'&gt;rescue&lt;/span&gt; &lt;span class='no'&gt;Exception&lt;/span&gt; 
+  &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot; have error&amp;quot;&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+
+&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;show&lt;/span&gt; 
+  &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;show&amp;quot;&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+
+&lt;span class='k'&gt;class&lt;/span&gt; &lt;span class='nc'&gt;Human&lt;/span&gt;
+  &lt;span class='n'&gt;show&lt;/span&gt;
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;initialize&lt;/span&gt; &lt;span class='nb'&gt;name&lt;/span&gt;
+    &lt;span class='vi'&gt;@name&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nb'&gt;name&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;name&lt;/span&gt;
+    &lt;span class='vi'&gt;@name&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+  
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;name&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nb'&gt;name&lt;/span&gt;
+    &lt;span class='vi'&gt;@name&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nb'&gt;name&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+
+  &lt;span class='kp'&gt;private&lt;/span&gt;
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;secret&lt;/span&gt;
+    &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;shit&amp;quot;&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;secret2&lt;/span&gt;
+    &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;shit shit&amp;quot;&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+
+ &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nc'&gt;self&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='nf'&gt;print_name&lt;/span&gt; &lt;span class='nb'&gt;name&lt;/span&gt;
+    &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='nb'&gt;name&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+
+&lt;span class='no'&gt;Human&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;print_name&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;hongmizi&amp;quot;&lt;/span&gt;
+&lt;span class='n'&gt;wiser&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='no'&gt;Human&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;new&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;wiser&amp;quot;&lt;/span&gt;
+&lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='n'&gt;wiser&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;name&lt;/span&gt;
+&lt;span class='n'&gt;wiser&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;name&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;another wiser&amp;quot;&lt;/span&gt;
+&lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='n'&gt;wiser&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;name&lt;/span&gt;
+&lt;span class='c1'&gt;#wiser.secret&lt;/span&gt;
+&lt;span class='c1'&gt;#wiser.secret2 #secret2 also is a private method&lt;/span&gt;
+&lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;----&amp;quot;&lt;/span&gt;
+&lt;span class='n'&gt;a&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;
+&lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='n'&gt;a&lt;/span&gt; 
+&lt;span class='n'&gt;a&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;5&lt;/span&gt;
+&lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='n'&gt;a&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
  </entry>
  

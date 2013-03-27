@@ -1,0 +1,93 @@
+---
+layout: post
+category : Wangxyu's Daily
+tagline: "Supporting tagline"
+tags : [Wangxyu's Daily]
+---
+{% include JB/setup %}
+- agile读至102
+- 学习ruby 语法
+
+- 阅读 编程修养
+{% highlight ruby %}
+def func(f={})
+ # 1.times f[:show]
+f[:show].call
+end
+
+func(:show => lambda{ puts "hello" })
+#assert true
+
+{}
+{1 => 2}
+{1 => 2, 3 => 4}
+
+
+
+def func name, &block
+#  :name=block
+  if block_given?
+    puts "block given"
+    block.call
+  end
+end
+func("name") { puts "hello" }
+
+=begin
+func "name" do
+  puts "hello" 
+end
+=end
+
+data=[1,2,3]
+#puts data.each { |k| k+1 }
+puts data.map do |k|
+k+1
+end
+
+def test
+yield(2)
+end
+puts "begin"
+test {|i| puts i }
+
+
+
+
+
+
+
+
+module ActiveSupport
+  class TestCase
+    @@test_cases = {}
+
+    def self.test test_case_name, &block
+      if block_given?
+        @@test_cases[test_case_name] = block
+      end
+    end
+
+    def self.run
+      @@test_cases.each do |key, value|
+        puts "I am running test #{key}...."
+        puts "The result is: #{value.call}"
+      end
+    end
+  end
+end
+
+class DemoTest < ActiveSupport::TestCase
+  test "1st test" do
+    puts "the 1st test passes"
+  end
+
+
+  test "2nd test" do
+    puts "the 2nd test fails"
+  end
+end
+
+
+DemoTest.run
+{% endhighlight %}

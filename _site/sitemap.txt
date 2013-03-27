@@ -1,14 +1,13 @@
 
 http://hongmizi.github.com/atom.xml
-http://hongmizi.github.com/tags.html
 http://hongmizi.github.com/categories.html
 http://hongmizi.github.com/rss.xml
-http://hongmizi.github.com/pages.html
 http://hongmizi.github.com/sitemap.txt
 http://hongmizi.github.com/team-members.html
 http://hongmizi.github.com/index.html
 http://hongmizi.github.com/archive.html
 
+http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/26/daily
 http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/25/daily
 http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/23/daily
 http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/22/daily

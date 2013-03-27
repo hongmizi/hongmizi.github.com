@@ -65,28 +65,12 @@
     
       
       	
-      	<li><a href="/tags.html">Tags</a></li>
-      	
-      
-    
-  
-    
-      
-      	
       	<li><a href="/categories.html">Categories</a></li>
       	
       
     
   
     
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/pages.html">Pages</a></li>
-      	
       
     
   
@@ -164,7 +148,62 @@
 
 <div class="row">
   <div class="span8">
-    <p>修改hongmizi.github.com</p><p>agile 读至81页</p><div class='highlight'><pre><code class='ruby'>
+    <p>修改hongmizi.github.com</p><p>agile 读至81页</p><div class='highlight'><pre><code class='ruby'><span class='n'>mans</span> <span class='o'>=</span> <span class='sx'>%w[wiser wiserwx wang]</span>
+<span class='n'>mans</span><span class='o'>.</span><span class='n'>each</span> <span class='p'>{</span> <span class='o'>|</span><span class='n'>man</span><span class='o'>|</span> <span class='nb'>print</span> <span class='s2'>&quot;hello </span><span class='si'>#{</span><span class='n'>man</span><span class='si'>}</span><span class='se'>\n</span><span class='s2'>&quot;</span><span class='p'>}</span>
+<span class='n'>mans</span><span class='o'>.</span><span class='n'>each</span> <span class='k'>do</span> <span class='o'>|</span><span class='n'>man</span><span class='o'>|</span>
+  <span class='nb'>print</span> <span class='s2'>&quot;do hello </span><span class='si'>#{</span><span class='n'>man</span><span class='si'>}</span><span class='s2'> </span><span class='se'>\n</span><span class='s2'>&quot;</span>
+<span class='k'>end</span>
+
+<span class='k'>begin</span>
+ <span class='k'>raise</span> <span class='s2'>&quot;error&quot;</span>
+<span class='k'>rescue</span> <span class='no'>Exception</span> 
+  <span class='nb'>puts</span> <span class='s2'>&quot; have error&quot;</span>
+<span class='k'>end</span>
+
+<span class='k'>def</span> <span class='nf'>show</span> 
+  <span class='nb'>puts</span> <span class='s2'>&quot;show&quot;</span>
+<span class='k'>end</span>
+
+<span class='k'>class</span> <span class='nc'>Human</span>
+  <span class='n'>show</span>
+  <span class='k'>def</span> <span class='nf'>initialize</span> <span class='nb'>name</span>
+    <span class='vi'>@name</span> <span class='o'>=</span> <span class='nb'>name</span>
+  <span class='k'>end</span>
+
+  <span class='k'>def</span> <span class='nf'>name</span>
+    <span class='vi'>@name</span>
+  <span class='k'>end</span>
+  
+  <span class='k'>def</span> <span class='nf'>name</span><span class='o'>=</span> <span class='nb'>name</span>
+    <span class='vi'>@name</span> <span class='o'>=</span> <span class='nb'>name</span>
+  <span class='k'>end</span>
+
+  <span class='kp'>private</span>
+  <span class='k'>def</span> <span class='nf'>secret</span>
+    <span class='nb'>puts</span> <span class='s2'>&quot;shit&quot;</span>
+  <span class='k'>end</span>
+
+  <span class='k'>def</span> <span class='nf'>secret2</span>
+    <span class='nb'>puts</span> <span class='s2'>&quot;shit shit&quot;</span>
+  <span class='k'>end</span>
+
+ <span class='k'>def</span> <span class='nc'>self</span><span class='o'>.</span><span class='nf'>print_name</span> <span class='nb'>name</span>
+    <span class='nb'>puts</span> <span class='nb'>name</span>
+  <span class='k'>end</span>
+<span class='k'>end</span>
+
+<span class='no'>Human</span><span class='o'>.</span><span class='n'>print_name</span> <span class='s2'>&quot;hongmizi&quot;</span>
+<span class='n'>wiser</span><span class='o'>=</span><span class='no'>Human</span><span class='o'>.</span><span class='n'>new</span> <span class='s2'>&quot;wiser&quot;</span>
+<span class='nb'>puts</span> <span class='n'>wiser</span><span class='o'>.</span><span class='n'>name</span>
+<span class='n'>wiser</span><span class='o'>.</span><span class='n'>name</span><span class='o'>=</span> <span class='s2'>&quot;another wiser&quot;</span>
+<span class='nb'>puts</span> <span class='n'>wiser</span><span class='o'>.</span><span class='n'>name</span>
+<span class='c1'>#wiser.secret</span>
+<span class='c1'>#wiser.secret2 #secret2 also is a private method</span>
+<span class='nb'>puts</span> <span class='s2'>&quot;----&quot;</span>
+<span class='n'>a</span> <span class='o'>=</span> <span class='s2'>&quot;hello&quot;</span>
+<span class='nb'>puts</span> <span class='n'>a</span> 
+<span class='n'>a</span> <span class='o'>=</span> <span class='mi'>5</span>
+<span class='nb'>puts</span> <span class='n'>a</span>
 </code></pre></div>
     <hr>
     <div class="pagination btn-group">
@@ -173,7 +212,7 @@
       
         <a class="btn" href="/archive.html">Archive</a>
       
-        <a class="btn next disabled">Next &rarr;</a>
+        <a class="btn next" href="/Wangxyu's%20Daily/2013/03/26/daily" title="Daily">Next &rarr;</a>
       
     </div>
     <hr>
@@ -223,7 +262,7 @@
 
   
      
-    	<li><a href="/tags.html#Wangxyu's Daily-ref">Wangxyu's Daily <span>4</span></a></li>
+    	<li><a href="/tags.html#Wangxyu's Daily-ref">Wangxyu's Daily <span>5</span></a></li>
     
   
 

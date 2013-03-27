@@ -5,7 +5,10 @@ tagline: "Supporting tagline"
 tags : [Wangxyu's Daily]
 ---
 {% include JB/setup %}
-<p>修改hongmizi.github.com</p>
-<p>agile 读至81页</p>
+-
+-
+-
+
 {% highlight ruby %}
+
 {% endhighlight %}

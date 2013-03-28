@@ -148,104 +148,37 @@
 
 <div class="row">
   <div class="span8">
-    <div class='highlight'><pre><code class='ruby'><span class='k'>def</span> <span class='nf'>invoke_func</span> <span class='o'>&amp;</span><span class='n'>func</span>
-  <span class='mi'>1</span><span class='o'>.</span><span class='n'>times</span><span class='p'>(</span><span class='o'>&amp;</span><span class='n'>func</span><span class='p'>)</span>
+    <h2 id='rails_122'>-rails 读至122页</h2>
+<hr /><div class='highlight'><pre><code class='ruby'> <span class='n'>endhighlightstr</span><span class='p'>,</span> <span class='kp'>attr</span><span class='o'>=</span><span class='p'>{</span><span class='ss'>:age</span> <span class='o'>=&gt;</span> <span class='mi'>10</span><span class='p'>,</span> <span class='ss'>:sex</span> <span class='o'>=&gt;</span> <span class='s2'>&quot;boy&quot;</span><span class='p'>,</span> <span class='ss'>:money</span> <span class='o'>=&gt;</span> <span class='mi'>100</span><span class='p'>}</span>
+  <span class='nb'>puts</span> <span class='n'>str</span>
+  <span class='kp'>attr</span><span class='o'>.</span><span class='n'>each</span> <span class='k'>do</span> <span class='o'>|</span> <span class='n'>k</span><span class='p'>,</span> <span class='n'>v</span><span class='o'>|</span>
+  <span class='nb'>puts</span> <span class='s2'>&quot;</span><span class='si'>#{</span><span class='n'>k</span><span class='si'>}</span><span class='s2'>,</span><span class='si'>#{</span><span class='n'>v</span><span class='si'>}</span><span class='s2'>&quot;</span>
+  <span class='k'>end</span>
 <span class='k'>end</span>
-<span class='n'>invoke_func</span> <span class='p'>{</span> <span class='nb'>puts</span> <span class='s2'>&quot;hello&quot;</span> <span class='p'>}</span>
 
-<span class='n'>mans</span> <span class='o'>=</span> <span class='sx'>%w[awsam wiserwx dingdong]</span>
-<span class='cm'>=begin</span>
-<span class='cm'>mans.each do |man|</span>
-<span class='cm'>puts man</span>
-<span class='cm'>end</span>
-<span class='cm'>=end</span>
-<span class='n'>mans</span><span class='o'>.</span><span class='n'>each</span> <span class='p'>{</span><span class='o'>|</span><span class='n'>man</span><span class='o'>|</span> <span class='nb'>print</span> <span class='s2'>&quot;hi&quot;</span> <span class='p'>}</span>
-<span class='nb'>print</span> <span class='s2'>&quot;hello wrold &quot;</span>
-<span class='cm'>=begin</span>
-<span class='cm'>def fun hash</span>
-<span class='cm'>  puts hash</span>
-<span class='cm'>end</span>
-<span class='cm'>fun :action =&gt; &#39;show&#39;, :ages =&gt; 16</span>
-<span class='cm'>#regular expressions</span>
-<span class='cm'>line = &quot;hello world&quot;</span>
-<span class='cm'>if line =~ /hello/</span>
-<span class='cm'>  puts &quot;have&quot;</span>
-<span class='cm'>else</span>
-<span class='cm'>  puts &quot;no&quot;</span>
-<span class='cm'>end</span>
 
-<span class='cm'>puts &quot;have hello &quot; if line =~ /hello/</span>
-<span class='cm'>puts &quot;have world &quot; if line =~ /world/</span>
-<span class='cm'>ages = []</span>
-<span class='cm'>ages &lt;&lt; 12</span>
-<span class='cm'>ages &lt;&lt; 14</span>
-<span class='cm'>ages &lt;&lt; 15</span>
-<span class='cm'>ages &lt;&lt; 16</span>
-<span class='cm'>print ages</span>
-<span class='cm'>ages.each do |age|</span>
-<span class='cm'>  puts age</span>
-<span class='cm'>end</span>
-<span class='cm'>names = %w[awsam world]</span>
-<span class='cm'>for name in names</span>
-<span class='cm'>  puts name</span>
-<span class='cm'>end</span>
+<span class='n'>func</span> <span class='s2'>&quot;wang&quot;</span><span class='p'>,</span> <span class='ss'>:age</span> <span class='o'>=&gt;</span> <span class='mi'>14</span><span class='p'>,</span><span class='ss'>:sex</span> <span class='o'>=&gt;</span> <span class='s2'>&quot;boy&quot;</span>
+<span class='n'>func</span> <span class='s2'>&quot;xu&quot;</span>
 
-<span class='cm'>womans = {</span>
-<span class='cm'>  :a =&gt; &#39;A&#39;, </span>
-<span class='cm'>  :b =&gt; &#39;B&#39;, </span>
-<span class='cm'>  :c =&gt; &#39;C&#39;,</span>
-<span class='cm'>  :d =&gt; &#39;D&#39;</span>
-<span class='cm'>}</span>
-<span class='cm'>puts womans[:a]</span>
-<span class='cm'>puts womans[:b] </span>
+<span class='k'>def</span> <span class='nf'>func2</span> <span class='n'>str</span><span class='p'>,</span><span class='kp'>attr</span><span class='o'>=</span><span class='p'>{}</span>
+  <span class='nb'>puts</span> <span class='n'>str</span>
+  <span class='n'>default_attr</span> <span class='o'>=</span> <span class='p'>{</span><span class='ss'>:age</span> <span class='o'>=&gt;</span> <span class='mi'>10</span><span class='p'>,</span> <span class='ss'>:sex</span> <span class='o'>=&gt;</span> <span class='s2'>&quot;boy&quot;</span><span class='p'>,</span> <span class='ss'>:money</span> <span class='o'>=&gt;</span> <span class='mi'>100</span> <span class='p'>}</span>
+  <span class='n'>default_attr</span><span class='o'>.</span><span class='n'>merge!</span><span class='p'>(</span><span class='kp'>attr</span><span class='p'>)</span>
+  <span class='n'>default_attr</span><span class='o'>.</span><span class='n'>each</span> <span class='k'>do</span> <span class='o'>|</span><span class='n'>k</span><span class='p'>,</span> <span class='n'>v</span><span class='o'>|</span>
+  <span class='nb'>puts</span> <span class='s2'>&quot;</span><span class='si'>#{</span><span class='n'>k</span><span class='si'>}</span><span class='s2'>,</span><span class='si'>#{</span><span class='n'>v</span><span class='si'>}</span><span class='s2'>&quot;</span>
+  <span class='k'>end</span>
+<span class='k'>end</span>
 
-<span class='cm'>womans.each do |k, v|</span>
-<span class='cm'>  print k,v </span>
-<span class='cm'>  print &quot;\n&quot;</span>
-<span class='cm'>end</span>
-<span class='cm'>=end</span>
-<span class='c1'># 注意规范</span>
-<span class='cm'>=begin</span>
-<span class='cm'>mans = [&quot;awsam&quot;,&quot;wiserwx&quot;,&quot;chile&quot;]</span>
-<span class='cm'>mans.each do |man|</span>
-<span class='cm'>  puts man</span>
-<span class='cm'>end</span>
-
-<span class='cm'>womans ={:awsam =&gt; 19, :wiserwx =&gt; 20, :chile =&gt; 21}</span>
-<span class='cm'>womans.each do |key, value|</span>
-<span class='cm'>  puts key</span>
-<span class='cm'>  puts value</span>
-<span class='cm'>  puts &quot;===&quot;</span>
-<span class='cm'>end</span>
-
-<span class='cm'>def say_hello name, age</span>
-<span class='cm'>  &quot;hello, #{name.capitalize}, #{age}&quot;</span>
-<span class='cm'>end</span>
-<span class='cm'>puts say_hello(&quot;awsam&quot;, 10)</span>
-<span class='cm'>puts say_hello(&quot;wiserwx&quot;, 20)</span>
-
-<span class='cm'>class Human</span>
-<span class='cm'>  def intilize name</span>
-<span class='cm'>  @name=name</span>
-<span class='cm'>  end</span>
-<span class='cm'>  </span>
-<span class='cm'>  def show </span>
-<span class='cm'>  puts &quot;name:#{@name}&quot;</span>
-<span class='cm'>  end</span>
-<span class='cm'>end</span>
-
-<span class='cm'>wiser=Human.new &quot;wiser&quot;</span>
-<span class='cm'>wiser.show</span>
-<span class='cm'>=end</span>
+<span class='n'>func2</span> <span class='s2'>&quot;liu&quot;</span><span class='p'>,</span> <span class='ss'>:age</span> <span class='o'>=&gt;</span> <span class='mi'>14</span><span class='p'>,</span> <span class='ss'>:sex</span> <span class='o'>=&gt;</span> <span class='s2'>&quot;girl&quot;</span><span class='o'>%</span><span class='p'>}</span>
 </code></pre></div>
     <hr>
     <div class="pagination btn-group">
       
-        <a class="btn prev" href="/Wangxyu's%20Daily/2013/03/22/daily" title="Daily">&larr; Previous</a>
+        <a class="btn prev" href="/Wangxyu's%20Daily/2013/03/26/daily" title="Daily">&larr; Previous</a>
       
         <a class="btn" href="/archive.html">Archive</a>
       
-        <a class="btn next" href="/Wangxyu's%20Daily/2013/03/25/daily" title="Daily">Next &rarr;</a>
+        <a class="btn next disabled">Next &rarr;</a>
       
     </div>
     <hr>
@@ -275,7 +208,7 @@
   <div class="span4">
     <section>
       <h4>Published</h4>
-      <div class="date"><span>23 March 2013</span></div>
+      <div class="date"><span>27 March 2013</span></div>
     </section>
     
       <section>

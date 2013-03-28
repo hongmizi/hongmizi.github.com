@@ -4,13 +4,43 @@
  <title>hongmizi</title>
  <link href="http://hongmizi.github.com/" rel="self"/>
  <link href="http://hongmizi.github.com"/>
- <updated>2013-03-27T09:07:08+08:00</updated>
+ <updated>2013-03-28T11:43:54+08:00</updated>
  <id>http://hongmizi.github.com</id>
  <author>
    <name>hongmizi</name>
    <email>xyu.wang.0713@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Daily</title>
+   <link href="http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/27/daily"/>
+   <updated>2013-03-27T00:00:00+08:00</updated>
+   <id>http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/27/daily</id>
+   <content type="html">&lt;h2 id='rails_122'&gt;-rails 读至122页&lt;/h2&gt;
+&lt;hr /&gt;&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='ruby'&gt; &lt;span class='n'&gt;endhighlightstr&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='kp'&gt;attr&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='p'&gt;{&lt;/span&gt;&lt;span class='ss'&gt;:age&lt;/span&gt; &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='mi'&gt;10&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='ss'&gt;:sex&lt;/span&gt; &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;boy&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='ss'&gt;:money&lt;/span&gt; &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='mi'&gt;100&lt;/span&gt;&lt;span class='p'&gt;}&lt;/span&gt;
+  &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='n'&gt;str&lt;/span&gt;
+  &lt;span class='kp'&gt;attr&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;each&lt;/span&gt; &lt;span class='k'&gt;do&lt;/span&gt; &lt;span class='o'&gt;|&lt;/span&gt; &lt;span class='n'&gt;k&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;v&lt;/span&gt;&lt;span class='o'&gt;|&lt;/span&gt;
+  &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='si'&gt;#{&lt;/span&gt;&lt;span class='n'&gt;k&lt;/span&gt;&lt;span class='si'&gt;}&lt;/span&gt;&lt;span class='s2'&gt;,&lt;/span&gt;&lt;span class='si'&gt;#{&lt;/span&gt;&lt;span class='n'&gt;v&lt;/span&gt;&lt;span class='si'&gt;}&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+
+
+&lt;span class='n'&gt;func&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;wang&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='ss'&gt;:age&lt;/span&gt; &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='mi'&gt;14&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;&lt;span class='ss'&gt;:sex&lt;/span&gt; &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;boy&amp;quot;&lt;/span&gt;
+&lt;span class='n'&gt;func&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;xu&amp;quot;&lt;/span&gt;
+
+&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;func2&lt;/span&gt; &lt;span class='n'&gt;str&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;&lt;span class='kp'&gt;attr&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='p'&gt;{}&lt;/span&gt;
+  &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='n'&gt;str&lt;/span&gt;
+  &lt;span class='n'&gt;default_attr&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;&lt;span class='ss'&gt;:age&lt;/span&gt; &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='mi'&gt;10&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='ss'&gt;:sex&lt;/span&gt; &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;boy&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='ss'&gt;:money&lt;/span&gt; &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='mi'&gt;100&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt;
+  &lt;span class='n'&gt;default_attr&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;merge!&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='kp'&gt;attr&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+  &lt;span class='n'&gt;default_attr&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;each&lt;/span&gt; &lt;span class='k'&gt;do&lt;/span&gt; &lt;span class='o'&gt;|&lt;/span&gt;&lt;span class='n'&gt;k&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;v&lt;/span&gt;&lt;span class='o'&gt;|&lt;/span&gt;
+  &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='si'&gt;#{&lt;/span&gt;&lt;span class='n'&gt;k&lt;/span&gt;&lt;span class='si'&gt;}&lt;/span&gt;&lt;span class='s2'&gt;,&lt;/span&gt;&lt;span class='si'&gt;#{&lt;/span&gt;&lt;span class='n'&gt;v&lt;/span&gt;&lt;span class='si'&gt;}&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+
+&lt;span class='n'&gt;func2&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;liu&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='ss'&gt;:age&lt;/span&gt; &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='mi'&gt;14&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='ss'&gt;:sex&lt;/span&gt; &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;girl&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;%&lt;/span&gt;&lt;span class='p'&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
  
  <entry>
    <title>Daily</title>

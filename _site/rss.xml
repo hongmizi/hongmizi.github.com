@@ -5,10 +5,65 @@
         <description>hongmizi - hongmizi</description>
         <link>http://hongmizi.github.com</link>
         <link>http://hongmizi.github.com</link>
-        <lastBuildDate>2013-03-28T11:43:54+08:00</lastBuildDate>
-        <pubDate>2013-03-28T11:43:54+08:00</pubDate>
+        <lastBuildDate>2013-03-30T09:55:21+08:00</lastBuildDate>
+        <pubDate>2013-03-30T09:55:21+08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Daily</title>
+                <description>&lt;p&gt;-学习spec 使用和测试方法 -一些常用命令 ack-grep等&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='ruby'&gt;&lt;span class='nb'&gt;require&lt;/span&gt; &lt;span class='s1'&gt;&amp;#39;spec_helper&amp;#39;&lt;/span&gt;
+
+&lt;span class='k'&gt;class&lt;/span&gt; &lt;span class='nc'&gt;Person&lt;/span&gt;
+  &lt;span class='kp'&gt;attr_accessor&lt;/span&gt; &lt;span class='ss'&gt;:name&lt;/span&gt;
+
+  &lt;span class='vc'&gt;@@name&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;Allen&amp;quot;&lt;/span&gt;
+  &lt;span class='vi'&gt;@xxxxx&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;Smith&amp;quot;&lt;/span&gt;
+
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nc'&gt;self&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='nf'&gt;foo&lt;/span&gt;
+    &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='vi'&gt;@xxxxx&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;object_id&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;bar&lt;/span&gt;
+    &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='vi'&gt;@xxxxx&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;object_id&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;name&lt;/span&gt;
+    &lt;span class='vi'&gt;@name&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;
+    &lt;span class='vc'&gt;@@name&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;name&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;name&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+    &lt;span class='vc'&gt;@@name&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nb'&gt;name&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+
+&lt;span class='no'&gt;Person&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;foo&lt;/span&gt;
+
+&lt;span class='no'&gt;Person&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;new&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;bar&lt;/span&gt;
+&lt;span class='c1'&gt;#the @xxxxx in Person is different of  @xxxxx in Person.new &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+                <link>http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/29/daily</link>
+                <guid>http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/29/daily</guid>
+                <pubDate>2013-03-29T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Daily</title>
+                <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;重读rails&lt;/p&gt;
+
+&lt;h2 id='_'&gt;- 大略浏览后面章节&lt;/h2&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='ruby'&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+                <link>http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/28/daily</link>
+                <guid>http://hongmizi.github.com/Wangxyu's%20Daily/2013/03/28/daily</guid>
+                <pubDate>2013-03-28T00:00:00+08:00</pubDate>
+        </item>
 
         <item>
                 <title>Daily</title>

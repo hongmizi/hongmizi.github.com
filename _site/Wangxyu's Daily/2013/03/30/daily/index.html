@@ -148,100 +148,80 @@
 
 <div class="row">
   <div class="span8">
-    <ul>
-<li>agile读至102</li>
+    <p>-rspc controllor test</p>
 
-<li>学习ruby 语法 - 阅读 编程修养</li>
-</ul>
-<div class='highlight'><pre><code class='ruby'><span class='k'>def</span> <span class='nf'>func</span><span class='p'>(</span><span class='n'>f</span><span class='o'>=</span><span class='p'>{})</span>
- <span class='c1'># 1.times f[:show]</span>
-<span class='n'>f</span><span class='o'>[</span><span class='ss'>:show</span><span class='o'>].</span><span class='n'>call</span>
-<span class='k'>end</span>
+<h2 id='rspc_model_test'>-rspc model test</h2>
+<div class='highlight'><pre><code class='ruby'><span class='k'>class</span> <span class='nc'>Cell</span>
+  <span class='kp'>attr</span> <span class='n'>accessor</span> <span class='ss'>:world</span><span class='p'>,</span> <span class='ss'>:x</span><span class='p'>,</span> <span class='ss'>:y</span>
+  <span class='k'>def</span> <span class='nf'>initialize</span> <span class='n'>world</span><span class='p'>,</span> <span class='n'>x</span><span class='p'>,</span> <span class='n'>y</span>
+    <span class='vi'>@x</span> <span class='o'>=</span> <span class='n'>x</span>
+    <span class='vi'>@y</span> <span class='o'>=</span> <span class='n'>y</span>
+    <span class='vi'>@world</span> <span class='o'>=</span> <span class='n'>world</span>
+  <span class='k'>end</span>
 
-<span class='n'>func</span><span class='p'>(</span><span class='ss'>:show</span> <span class='o'>=&gt;</span> <span class='nb'>lambda</span><span class='p'>{</span> <span class='nb'>puts</span> <span class='s2'>&quot;hello&quot;</span> <span class='p'>})</span>
-<span class='c1'>#assert true</span>
-
-<span class='p'>{}</span>
-<span class='p'>{</span><span class='mi'>1</span> <span class='o'>=&gt;</span> <span class='mi'>2</span><span class='p'>}</span>
-<span class='p'>{</span><span class='mi'>1</span> <span class='o'>=&gt;</span> <span class='mi'>2</span><span class='p'>,</span> <span class='mi'>3</span> <span class='o'>=&gt;</span> <span class='mi'>4</span><span class='p'>}</span>
-
-
-
-<span class='k'>def</span> <span class='nf'>func</span> <span class='nb'>name</span><span class='p'>,</span> <span class='o'>&amp;</span><span class='n'>block</span>
-<span class='c1'>#  :name=block</span>
-  <span class='k'>if</span> <span class='nb'>block_given?</span>
-    <span class='nb'>puts</span> <span class='s2'>&quot;block given&quot;</span>
-    <span class='n'>block</span><span class='o'>.</span><span class='n'>call</span>
+  <span class='k'>def</span> <span class='nf'>local</span>
+    <span class='nb'>puts</span> <span class='s2'>&quot;</span><span class='si'>#{</span><span class='vi'>@world</span><span class='o'>.</span><span class='n'>name</span><span class='si'>}</span><span class='s2'>: </span><span class='si'>#{</span><span class='vi'>@x</span><span class='si'>}</span><span class='s2'> </span><span class='si'>#{</span><span class='vi'>@y</span><span class='si'>}</span><span class='s2'>&quot;</span>
   <span class='k'>end</span>
 <span class='k'>end</span>
-<span class='n'>func</span><span class='p'>(</span><span class='s2'>&quot;name&quot;</span><span class='p'>)</span> <span class='p'>{</span> <span class='nb'>puts</span> <span class='s2'>&quot;hello&quot;</span> <span class='p'>}</span>
 
-<span class='cm'>=begin</span>
-<span class='cm'>func &quot;name&quot; do</span>
-<span class='cm'>  puts &quot;hello&quot; </span>
-<span class='cm'>end</span>
-<span class='cm'>=end</span>
+<span class='k'>class</span> <span class='nc'>World</span>
+  <span class='kp'>attr_accessor</span> <span class='ss'>:cell</span><span class='p'>,</span> <span class='ss'>:name</span>
+  
+  <span class='k'>def</span> <span class='nf'>initialize</span> <span class='nb'>name</span>
+    <span class='vi'>@cells</span> <span class='o'>=</span> <span class='o'>[]</span>
+    <span class='vi'>@name</span> <span class='o'>=</span> <span class='nb'>name</span>
+  <span class='k'>end</span>
+  
+  <span class='k'>def</span> <span class='nf'>add_new_cell</span> <span class='n'>x</span><span class='p'>,</span> <span class='n'>y</span>
+    <span class='vi'>@cells</span> <span class='o'>&lt;&lt;</span> <span class='no'>Cell</span><span class='o'>.</span><span class='n'>new</span><span class='p'>(</span><span class='nb'>self</span><span class='p'>,</span> <span class='n'>x</span><span class='p'>,</span> <span class='n'>y</span><span class='p'>)</span>
+  <span class='k'>end</span>
 
-<span class='n'>data</span><span class='o'>=[</span><span class='mi'>1</span><span class='p'>,</span><span class='mi'>2</span><span class='p'>,</span><span class='mi'>3</span><span class='o'>]</span>
-<span class='c1'>#puts data.each { |k| k+1 }</span>
-<span class='nb'>puts</span> <span class='n'>data</span><span class='o'>.</span><span class='n'>map</span> <span class='k'>do</span> <span class='o'>|</span><span class='n'>k</span><span class='o'>|</span>
-<span class='n'>k</span><span class='o'>+</span><span class='mi'>1</span>
-<span class='k'>end</span>
-
-<span class='k'>def</span> <span class='nf'>test</span>
-<span class='k'>yield</span><span class='p'>(</span><span class='mi'>2</span><span class='p'>)</span>
-<span class='k'>end</span>
-<span class='nb'>puts</span> <span class='s2'>&quot;begin&quot;</span>
-<span class='nb'>test</span> <span class='p'>{</span><span class='o'>|</span><span class='n'>i</span><span class='o'>|</span> <span class='nb'>puts</span> <span class='n'>i</span> <span class='p'>}</span>
-
-
-
-
-
-
-
-
-<span class='k'>module</span> <span class='nn'>ActiveSupport</span>
-  <span class='k'>class</span> <span class='nc'>TestCase</span>
-    <span class='vc'>@@test_cases</span> <span class='o'>=</span> <span class='p'>{}</span>
-
-    <span class='k'>def</span> <span class='nc'>self</span><span class='o'>.</span><span class='nf'>test</span> <span class='n'>test_case_name</span><span class='p'>,</span> <span class='o'>&amp;</span><span class='n'>block</span>
-      <span class='k'>if</span> <span class='nb'>block_given?</span>
-        <span class='vc'>@@test_cases</span><span class='o'>[</span><span class='n'>test_case_name</span><span class='o'>]</span> <span class='o'>=</span> <span class='n'>block</span>
-      <span class='k'>end</span>
-    <span class='k'>end</span>
-
-    <span class='k'>def</span> <span class='nc'>self</span><span class='o'>.</span><span class='nf'>run</span>
-      <span class='vc'>@@test_cases</span><span class='o'>.</span><span class='n'>each</span> <span class='k'>do</span> <span class='o'>|</span><span class='n'>key</span><span class='p'>,</span> <span class='n'>value</span><span class='o'>|</span>
-        <span class='nb'>puts</span> <span class='s2'>&quot;I am running test </span><span class='si'>#{</span><span class='n'>key</span><span class='si'>}</span><span class='s2'>....&quot;</span>
-        <span class='nb'>puts</span> <span class='s2'>&quot;The result is: </span><span class='si'>#{</span><span class='n'>value</span><span class='o'>.</span><span class='n'>call</span><span class='si'>}</span><span class='s2'>&quot;</span>
-      <span class='k'>end</span>
+  <span class='k'>def</span> <span class='nf'>count_all_cell</span>
+    <span class='vi'>@cells</span><span class='o'>.</span><span class='n'>each</span> <span class='k'>do</span> <span class='o'>|</span><span class='n'>cell</span><span class='o'>|</span> 
+      <span class='n'>cell</span><span class='o'>.</span><span class='n'>local</span>     
     <span class='k'>end</span>
   <span class='k'>end</span>
-<span class='k'>end</span>
-
-<span class='k'>class</span> <span class='nc'>DemoTest</span> <span class='o'>&lt;</span> <span class='ss'>ActiveSupport</span><span class='p'>:</span><span class='ss'>:TestCase</span>
-  <span class='nb'>test</span> <span class='s2'>&quot;1st test&quot;</span> <span class='k'>do</span>
-    <span class='nb'>puts</span> <span class='s2'>&quot;the 1st test passes&quot;</span>
+  
+  <span class='k'>def</span> <span class='nf'>rules</span>
+    
   <span class='k'>end</span>
 
-
-  <span class='nb'>test</span> <span class='s2'>&quot;2nd test&quot;</span> <span class='k'>do</span>
-    <span class='nb'>puts</span> <span class='s2'>&quot;the 2nd test fails&quot;</span>
-  <span class='k'>end</span>
 <span class='k'>end</span>
 
+<span class='n'>wiser</span><span class='o'>=</span><span class='no'>World</span><span class='o'>.</span><span class='n'>new</span> <span class='s2'>&quot;wiser&#39;s World&quot;</span>
+<span class='n'>wiser</span><span class='o'>.</span><span class='n'>count_all_cell</span>
+<span class='n'>wiser</span><span class='o'>.</span><span class='n'>add_new_cell</span>  <span class='mi'>1</span><span class='p'>,</span><span class='mi'>2</span>
+<span class='n'>wiser</span><span class='o'>.</span><span class='n'>add_new_cell</span> <span class='mi'>3</span><span class='p'>,</span><span class='mi'>4</span>
 
-<span class='no'>DemoTest</span><span class='o'>.</span><span class='n'>run</span>
+<span class='n'>wiser</span><span class='o'>.</span><span class='n'>count_all_cell</span>
+
+
+
+
+
+
+
+<span class='nb'>require</span> <span class='s2'>&quot;spec_helper&quot;</span>
+<span class='n'>describe</span> <span class='no'>ProductsController</span> <span class='k'>do</span>
+ <span class='n'>describe</span> <span class='s2'>&quot;GET /index&quot;</span> <span class='k'>do</span>
+  <span class='n'>it</span> <span class='s2'>&quot;index should have respond&quot;</span> <span class='k'>do</span>
+   <span class='mi'>3</span><span class='o'>.</span><span class='n'>times</span> <span class='p'>{</span><span class='no'>Product</span><span class='o'>.</span><span class='n'>create!</span> <span class='ss'>:title</span> <span class='o'>=&gt;</span> <span class='s2'>&quot;aa&quot;</span><span class='p'>,</span> <span class='ss'>:description</span> <span class='o'>=&gt;</span> <span class='s2'>&quot;bb&quot;</span><span class='p'>,</span> <span class='ss'>:image_url</span> <span class='o'>=&gt;</span> <span class='s2'>&quot;cc&quot;</span><span class='p'>,</span> <span class='ss'>:price</span> <span class='o'>=&gt;</span> <span class='mi'>0</span><span class='o'>.</span><span class='mi'>5</span><span class='p'>}</span>
+    <span class='n'>get</span> <span class='ss'>:show</span><span class='p'>,</span> <span class='ss'>:xxx</span> <span class='o'>=&gt;</span> <span class='mi'>1</span>
+      <span class='n'>response</span><span class='o'>.</span><span class='n'>should</span> <span class='n'>be_success</span>
+    <span class='n'>response</span><span class='o'>.</span><span class='n'>code</span><span class='o'>.</span><span class='n'>should</span> <span class='o'>==</span> <span class='s2'>&quot;200&quot;</span>
+     <span class='n'>assigns</span><span class='o'>[</span><span class='ss'>:products</span><span class='o'>].</span><span class='n'>map</span><span class='p'>(</span><span class='o'>&amp;</span><span class='ss'>:title</span><span class='p'>)</span><span class='o'>.</span><span class='n'>should</span> <span class='o'>==</span> <span class='o'>[</span><span class='s2'>&quot;aa&quot;</span><span class='p'>,</span> <span class='s2'>&quot;aa&quot;</span><span class='p'>,</span> <span class='s2'>&quot;aa&quot;</span><span class='o'>]</span>
+     <span class='k'>end</span>
+  <span class='k'>end</span>
+ <span class='k'>end</span>     
 </code></pre></div>
     <hr>
     <div class="pagination btn-group">
       
-        <a class="btn prev" href="/Wangxyu's%20Daily/2013/03/25/daily" title="Daily">&larr; Previous</a>
+        <a class="btn prev" href="/Wangxyu's%20Daily/2013/03/29/daily" title="Daily">&larr; Previous</a>
       
         <a class="btn" href="/archive.html">Archive</a>
       
-        <a class="btn next" href="/Wangxyu's%20Daily/2013/03/27/daily" title="Daily">Next &rarr;</a>
+        <a class="btn next disabled">Next &rarr;</a>
       
     </div>
     <hr>
@@ -271,7 +251,7 @@
   <div class="span4">
     <section>
       <h4>Published</h4>
-      <div class="date"><span>26 March 2013</span></div>
+      <div class="date"><span>30 March 2013</span></div>
     </section>
     
       <section>

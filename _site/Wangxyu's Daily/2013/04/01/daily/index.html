@@ -148,142 +148,51 @@
 
 <div class="row">
   <div class="span8">
-    <div class='highlight'><pre><code class='ruby'><span class='nb'>puts</span> <span class='s2'>&quot;hello&quot;</span>
-<span class='nb'>name</span> <span class='o'>=</span> <span class='s2'>&quot;awsam&quot;</span>
-<span class='nb'>puts</span><span class='p'>(</span><span class='s2'>&quot;hello </span><span class='si'>#{</span><span class='nb'>name</span><span class='si'>}</span><span class='s2'>&quot;</span><span class='p'>)</span>
-
-<span class='k'>class</span> <span class='nc'>Apple</span>
-  <span class='k'>def</span> <span class='nf'>fun1</span>
-    <span class='nb'>puts</span> <span class='vi'>@a</span>
-    <span class='nb'>puts</span> <span class='s2'>&quot;@@&quot;</span>
+    <p>-build up a site to checking in</p>
+<div class='highlight'><pre><code class='ruby'><span class='k'>def</span> <span class='nf'>n_times</span> <span class='n'>thing</span>
+  <span class='k'>return</span> <span class='nb'>lambda</span> <span class='p'>{</span><span class='o'>|</span><span class='n'>n</span><span class='o'>|</span> <span class='nb'>puts</span> <span class='n'>thing</span> <span class='o'>*</span> <span class='n'>n</span> <span class='p'>}</span>
   <span class='k'>end</span>
-  
-  <span class='k'>def</span> <span class='nf'>fun2</span>
-    <span class='vi'>@a</span> <span class='o'>=</span> <span class='s2'>&quot;apple&quot;</span>
+
+  <span class='n'>p1</span> <span class='o'>=</span> <span class='n'>n_times</span><span class='p'>(</span><span class='mi'>23</span><span class='p'>)</span>
+  <span class='n'>p1</span><span class='o'>.</span><span class='n'>call</span><span class='p'>(</span><span class='mi'>3</span><span class='p'>)</span>
+  <span class='n'>p2</span> <span class='o'>=</span> <span class='n'>n_times</span><span class='p'>(</span><span class='s2'>&quot;hello&quot;</span><span class='p'>)</span>
+  <span class='k'>for</span> <span class='n'>i</span> <span class='k'>in</span> <span class='mi'>1</span><span class='o'>.</span><span class='n'>.</span><span class='mi'>5</span>
+  <span class='n'>p2</span><span class='o'>.</span><span class='n'>call</span> <span class='mi'>3</span>
   <span class='k'>end</span>
-<span class='k'>end</span> 
 
-<span class='n'>apple</span><span class='o'>=</span><span class='no'>Apple</span><span class='o'>.</span><span class='n'>new</span>
-<span class='c1'>#apple.fun2</span>
-<span class='n'>apple</span><span class='o'>.</span><span class='n'>fun1</span>
-<span class='n'>apple</span><span class='o'>.</span><span class='n'>fun2</span>
-<span class='n'>apple2</span><span class='o'>=</span><span class='kp'>nil</span>
-<span class='k'>if</span> <span class='n'>apple2</span>
-  <span class='nb'>puts</span> <span class='s2'>&quot;ok&quot;</span>
-<span class='k'>else</span>
-  <span class='nb'>puts</span> <span class='s2'>&quot;false&quot;</span>
-<span class='k'>end</span>
-
-
-<span class='nb'>puts</span> <span class='ss'>:awsam</span>
-
-<span class='o'>&lt;&lt;</span><span class='no'>EEE</span>
-<span class='sh'>class Man</span>
-<span class='sh'>  attr_reader :name,:age</span>
-<span class='sh'>  </span>
-
-<span class='sh'>  def initialize</span>
-<span class='sh'>    age=0</span>
-<span class='sh'>    @name=&quot;&quot;</span>
-<span class='sh'>  end</span>
-
-<span class='sh'>  def set_name(n)</span>
-<span class='sh'>    @name=n</span>
-<span class='sh'>  end</span>
-
-<span class='sh'>  def set_age(n)</span>
-<span class='sh'>    @age=n</span>
-<span class='sh'>  end</span>
-<span class='sh'>  </span>
-<span class='sh'>  def show</span>
-<span class='sh'>    print &quot;%s %s&quot;%[@name,@age]</span>
-<span class='sh'>  end</span>
-<span class='sh'>end</span>
-
-<span class='sh'>wiser=Man.new</span>
-<span class='sh'>wiser.show</span>
-<span class='sh'>wiser.set_name &quot;wiser&quot;</span>
-<span class='sh'>wiser.set_age 100</span>
-<span class='sh'>wiser.show</span>
-<span class='sh'>puts &quot;&quot;</span>
-<span class='sh'> 20.times {puts &quot;2.times&quot;}</span>
-<span class='no'>EEE</span>
-<span class='o'>&lt;&lt;</span><span class='no'>DDD</span>
-<span class='sh'>def show()</span>
-<span class='sh'>  puts &quot;show&quot;</span>
-<span class='sh'>end</span>
-
-<span class='sh'>def start()</span>
-<span class='sh'>  puts &quot;start&quot;</span>
-<span class='sh'>  return :show</span>
-<span class='sh'>end</span>
-
-<span class='sh'>a=method(:show)</span>
-<span class='sh'>a.call</span>
-<span class='sh'>b=start</span>
-<span class='sh'>c=method(b)</span>
-<span class='sh'>c.call</span>
-<span class='no'>DDD</span>
+<span class='k'>def</span> <span class='nf'>fib</span> <span class='n'>n</span>
+  <span class='k'>if</span> <span class='n'>n</span><span class='o'>&lt;=</span><span class='mi'>2</span>
+      <span class='k'>return</span> <span class='mi'>1</span>
+        <span class='k'>else</span>
+            <span class='k'>return</span> <span class='n'>fib</span><span class='p'>(</span><span class='n'>n</span><span class='o'>-</span><span class='mi'>1</span><span class='p'>)</span> <span class='o'>+</span> <span class='n'>fib</span><span class='p'>(</span><span class='n'>n</span><span class='o'>-</span><span class='mi'>2</span><span class='p'>)</span>
+              <span class='k'>end</span>
+              <span class='k'>end</span>
+              
+              <span class='k'>for</span> <span class='n'>i</span> <span class='k'>in</span> <span class='mi'>1</span><span class='o'>.</span><span class='n'>.</span><span class='mi'>100</span>
+              <span class='nb'>puts</span> <span class='s2'>&quot;</span><span class='si'>#{</span><span class='n'>i</span><span class='si'>}</span><span class='s2'>: </span><span class='si'>#{</span><span class='n'>fib</span><span class='p'>(</span><span class='n'>i</span><span class='p'>)</span><span class='si'>}</span><span class='s2'> &quot;</span>
+              <span class='k'>end</span><span class='o'>&gt;</span>
 
 
+<span class='k'>def</span> <span class='nf'>fib</span> <span class='n'>n</span>
+  <span class='n'>data</span> <span class='o'>=</span> <span class='o'>[</span><span class='mi'>1</span><span class='p'>,</span><span class='mi'>1</span><span class='o'>]</span>
+    <span class='k'>yield</span><span class='p'>(</span><span class='mi'>1</span><span class='p'>,</span><span class='mi'>1</span><span class='p'>)</span>
+      <span class='k'>yield</span><span class='p'>(</span><span class='mi'>2</span><span class='p'>,</span><span class='mi'>1</span><span class='p'>)</span>
+        <span class='k'>for</span> <span class='n'>i</span> <span class='k'>in</span> <span class='mi'>2</span><span class='o'>.</span><span class='n'>.n</span><span class='o'>-</span><span class='mi'>1</span>
+            <span class='n'>data</span><span class='o'>[</span><span class='n'>i</span><span class='o'>]</span> <span class='o'>=</span> <span class='n'>data</span><span class='o'>[</span><span class='n'>i</span><span class='o'>-</span><span class='mi'>1</span><span class='o'>]</span> <span class='o'>+</span> <span class='n'>data</span><span class='o'>[</span><span class='n'>i</span><span class='o'>-</span><span class='mi'>2</span><span class='o'>]</span>
+                <span class='k'>yield</span><span class='p'>(</span><span class='n'>i</span><span class='o'>+</span><span class='mi'>1</span><span class='p'>,</span><span class='n'>data</span><span class='o'>[</span><span class='n'>i</span><span class='o'>]</span><span class='p'>)</span>
+                  <span class='k'>end</span>
+                  <span class='k'>end</span>
 
-
-
-
-
-
-<span class='o'>&lt;&lt;</span><span class='no'>BBB</span>
-<span class='sh'>cities = {&#39;BJ&#39; =&gt; &quot;beijing&quot;,&#39;NJ&#39;=&gt; &quot;nanjing&quot;}</span>
-<span class='sh'>def find_city(map,state)</span>
-<span class='sh'>  if map.include?(state)</span>
-<span class='sh'>    return map[state]</span>
-<span class='sh'>  else</span>
-<span class='sh'>    return &quot;not fond&quot;</span>
-<span class='sh'>  end</span>
-<span class='sh'>end</span>
-
-<span class='sh'>cities[&quot;find&quot;] = method(:find_city)</span>
-
-<span class='sh'>while true</span>
-<span class='sh'>  print &quot;state?&quot;</span>
-<span class='sh'>  state=gets.chomp</span>
-<span class='sh'>  break if state.empty?</span>
-<span class='sh'>  puts cities[&quot;find&quot;].call(cities,state)</span>
-<span class='sh'>end</span>
-
-
-<span class='no'>BBB</span>
-
-
-
-<span class='o'>&lt;&lt;</span><span class='no'>AAA</span>
-<span class='sh'>def show()</span>
-<span class='sh'>  puts &quot;hello&quot;</span>
-<span class='sh'>end</span>
-
-<span class='sh'>def start()</span>
-<span class='sh'>  puts &quot;world&quot;</span>
-<span class='sh'>  show()</span>
-<span class='sh'>end</span>
-
-<span class='sh'>#  start</span>
-<span class='sh'>stuff = &quot;hello wrld a thing si&quot;.split(&#39; &#39;)</span>
-<span class='sh'>print stuff</span>
-<span class='sh'>print &quot;\n&quot;</span>
-<span class='sh'>puts stuff[1]</span>
-<span class='sh'>puts stuff.pop()</span>
-<span class='sh'>puts stuff.join(&#39; &#39;)</span>
-<span class='sh'>puts stuff.values_at(1,2).join(&#39;#&#39;)</span>
-<span class='no'>AAA</span>
+                  <span class='n'>fib</span><span class='p'>(</span><span class='mi'>10</span><span class='p'>)</span> <span class='p'>{</span> <span class='o'>|</span><span class='n'>n</span><span class='p'>,</span> <span class='n'>v</span><span class='o'>|</span> <span class='nb'>puts</span> <span class='s2'>&quot;</span><span class='si'>#{</span><span class='n'>n</span><span class='si'>}</span><span class='s2'>:</span><span class='si'>#{</span><span class='n'>v</span><span class='si'>}</span><span class='s2'>&quot;</span><span class='p'>}</span>
 </code></pre></div>
     <hr>
     <div class="pagination btn-group">
       
-        <a class="btn prev" href="/Wangxyu's%20Daily/2013/03/21/daily" title="Daily">&larr; Previous</a>
+        <a class="btn prev" href="/Wangxyu's%20Daily/2013/03/30/daily" title="Daily">&larr; Previous</a>
       
         <a class="btn" href="/archive.html">Archive</a>
       
-        <a class="btn next" href="/Wangxyu's%20Daily/2013/03/23/daily" title="Daily">Next &rarr;</a>
+        <a class="btn next disabled">Next &rarr;</a>
       
     </div>
     <hr>
@@ -313,7 +222,7 @@
   <div class="span4">
     <section>
       <h4>Published</h4>
-      <div class="date"><span>22 March 2013</span></div>
+      <div class="date"><span>01 April 2013</span></div>
     </section>
     
       <section>

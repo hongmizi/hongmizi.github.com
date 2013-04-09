@@ -5,10 +5,35 @@
         <description>hongmizi - hongmizi</description>
         <link>http://hongmizi.github.com</link>
         <link>http://hongmizi.github.com</link>
-        <lastBuildDate>2013-04-02T00:00:10+08:00</lastBuildDate>
-        <pubDate>2013-04-02T00:00:10+08:00</pubDate>
+        <lastBuildDate>2013-04-09T23:20:25+08:00</lastBuildDate>
+        <pubDate>2013-04-09T23:20:25+08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Daily</title>
+                <description>&lt;p&gt;今天做spec测试的时候遇到这个问题,排查好久无果,最后发现原因是我建立了一个名字叫test.rb的文件&amp;#8230;God!&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;~/work/Checkingin (dev)$ rspec spec/models/checkin_spec.rb 
+/home/awsam/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/test/unit/assertions.rb:4:in `&lt;span class='nt'&gt;&amp;lt;top&lt;/span&gt; &lt;span class='err'&gt;(&lt;/span&gt;&lt;span class='na'&gt;required&lt;/span&gt;&lt;span class='err'&gt;)&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;&amp;#39;: Test is not a module (TypeError)
+from /  home/awsam/.rvm/gems/ruby-1.9.2-p320@Checkingin/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require&amp;#39;
+from /home/awsam/ .rvm/gems/ruby-1.9.2-p320@Checkingin/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `block in require&amp;#39;
+from /home/awsam/.rvm/  gems/ruby-1.9.2-p320@Checkingin/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency&amp;#39;
+from /home/awsam/.rvm/gems/rub  y-1.9.2-p320@Checkingin/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require&amp;#39;
+from /home/awsam/.rvm/gems/ruby-1.9.2-p320@Checki ngin/gems/rspec-rails-2.11.0/lib/rspec/rails/adapters.rb:2:in `&lt;span class='nt'&gt;&amp;lt;top&lt;/span&gt; &lt;span class='err'&gt;(&lt;/span&gt;&lt;span class='na'&gt;required&lt;/span&gt;&lt;span class='err'&gt;)&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;&amp;#39;
+from /home/awsam/.rvm/gems/ruby-1.9.2-p320@Checkingin/gems/activesupport-3.2  .13/lib/active_support/dependencies.rb:251:in `require&amp;#39;
+from /home/aws  am/.rvm/gems/ruby-1.9.2-p320@Checkingin/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `block in require&amp;#39;
+from /home/awsam/.  rvm/gems/ruby-1.9.2-p320@Checkingin/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency&amp;#39;
+from /home/awsam/.rvm/gem s/ruby-1.9.2-p320@Checkingin/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require&amp;#39;
+from /home/awsam/.rvm/gems/ruby-1.9.2-p320  @Checkingin/gems/rspec-rails-2.11.0/lib/rspec/rails.rb:10:in `&lt;span class='nt'&gt;&amp;lt;top&lt;/span&gt; &lt;span class='err'&gt;(&lt;/span&gt;&lt;span class='na'&gt;required&lt;/span&gt;&lt;span class='err'&gt;)&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;&amp;#39;
+from /home/awsam/.rvm/gems/ruby-1.9.2-p320@Checkingin/gems/activesupport-3. 2.13/lib/active_support/dependencies.rb:251:in `require&amp;#39;
+from /home/aw sam/.rvm/gems/ruby-1.9.2-p320@Checkingin/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `block in require&amp;#39;
+from /home/awsam/ .rvm/gems/ruby-1.9.2-p320@Checkingin/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency&amp;#39;
+from /home/awsam/.rvm/g ems/ruby-1.9.2-p320@Checkingin/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require&amp;#39;`
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+                <link>http://hongmizi.github.com/Wangxyu's%20Daily/2013/04/09/daily</link>
+                <guid>http://hongmizi.github.com/Wangxyu's%20Daily/2013/04/09/daily</guid>
+                <pubDate>2013-04-09T00:00:00+08:00</pubDate>
+        </item>
 
         <item>
                 <title>Daily</title>

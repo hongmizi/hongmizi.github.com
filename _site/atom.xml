@@ -4,13 +4,69 @@
  <title>hongmizi</title>
  <link href="http://hongmizi.github.com/" rel="self"/>
  <link href="http://hongmizi.github.com"/>
- <updated>2013-04-09T23:20:25+08:00</updated>
+ <updated>2013-04-25T00:25:04+08:00</updated>
  <id>http://hongmizi.github.com</id>
  <author>
    <name>hongmizi</name>
    <email>xyu.wang.0713@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Daily</title>
+   <link href="http://hongmizi.github.com/Wangxyu's%20Daily/2013/04/24/daily"/>
+   <updated>2013-04-24T00:00:00+08:00</updated>
+   <id>http://hongmizi.github.com/Wangxyu's%20Daily/2013/04/24/daily</id>
+   <content type="html">&lt;h1 id='id23'&gt;记开发@功能&lt;/h1&gt;
+
+&lt;p&gt;时间：4.20 4.21 4.22 4.23 4.24 5天&lt;/p&gt;
+
+&lt;h3 id='id24'&gt;涉及到的内容：&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Active Record Nested Attributes&lt;/li&gt;
+
+&lt;li&gt;Javascript&lt;/li&gt;
+
+&lt;li&gt;yaml语法&lt;/li&gt;
+
+&lt;li&gt;json&lt;/li&gt;
+
+&lt;li&gt;ajax&lt;/li&gt;
+
+&lt;li&gt;popover&lt;/li&gt;
+
+&lt;li&gt;chosen&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+&lt;li&gt;刚拿到这个任务，思维有点混乱，不知从何下手，不过任务说明上有提示，用uname，那就从uname下手吧。 首先用chosen做了一下，发现无法在输入框中@别人，随后又找到了一个at.js的库，老大说用这个不好，就打算在输入框上面单独建立一个选择框，用chosen多选来实现。&lt;/li&gt;
+
+&lt;li&gt;要想@别人，需要一个mention表用来记录，所以先rails g model建立一张表，然后chosen改变后发送一个ajax请求，服务器收到后回复一个json，然后用返回的json来更新相应的提示，基本思路就是这样的。首先遇到的坑就是chosen不能显示placeholder的问题，google了一下，说是要在option最前面添加一个空字符串，得知了可以用upshift方法。&lt;/li&gt;
+
+&lt;li&gt;因为一个penny可以有多个mentions，为了方便的修改值，老大提示用netsted arrributes 。但随后发现会出现多次提交表单的问题，遂弃用。 前端出了很多问题，浪费了很多时间，在此就不细说了，总之，前端挺麻烦的。&lt;/li&gt;
+
+&lt;li&gt;其实最主要的就是：js检测选择框改变，发送ajax请求，服务端返回json，在mention表里增加和删除相应的记录，其实就是这么点事，原理知道了，一切也都简单了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='ruby'&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Daily</title>
+   <link href="http://hongmizi.github.com/Wangxyu's%20Daily/2013/04/13/daily"/>
+   <updated>2013-04-13T00:00:00+08:00</updated>
+   <id>http://hongmizi.github.com/Wangxyu's%20Daily/2013/04/13/daily</id>
+   <content type="html">&lt;ul&gt;
+&lt;li&gt;rails console 是运行在model层的&lt;/li&gt;
+
+&lt;li&gt;可以用:module 来进行管理员和普通用户的分组&lt;/li&gt;
+
+&lt;li&gt;一些公共的类可以放在app/domain里供model和controller调用 * 方法中的代码尽可能的短小&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='ruby'&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
  
  <entry>
    <title>Daily</title>
